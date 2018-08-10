@@ -1,0 +1,98 @@
+swagger: '2.0'
+info:
+  description: This is a simple API to commercialize data science
+  version: 1.0.0
+  title: Simple Scoring API
+  # put the contact info for your development or API team
+  contact:
+    email: edeuser@rgare.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+tags:
+  - name: scoring
+    description: Everything we need around scoring a person.
+    externalDocs:
+      url: https://github.com/eddeuser2017/commercialize_api
+  - name: health
+    description: All apis should have a way to determine if it is healthy.
+paths:
+  /scores:
+    post:
+      summary: By passing in a person you can get a score.
+      tags: 
+        - scoring
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: persontoscore
+          description: The person to score.
+          schema:
+            $ref: "#/definitions/Person"  
+      responses:
+        200:
+          description: response of the record with a predictive score.
+          schema:
+            $ref: '#/definitions/Scored'
+        400:
+          description: bad input parameter
+  /ping:
+    get:
+      tags:
+        - health
+      summary:  heartbeat operation
+      description: This is an endpoint to understand if the api is responding, this should be monitored and alerted for uptime.
+      responses:
+        200:
+          description: OK
+        500:
+          description: service is not healthy 
+
+#Reusable schemas (data models)
+definitions:
+    Person:
+      type: object
+      required:
+      - id
+      - gender
+      - conditions
+      properties:
+        id:
+          type: string
+          format: uuid
+        gender:
+          type: string
+          pattern: '^[mMfFuU]$'
+        conditions:
+          $ref: '#/definitions/Conditions'
+    Scored:
+      type: object
+      required:
+      - person
+      - score
+      properties:
+        person:
+          $ref: '#/definitions/Person'
+        score:
+          type: string
+    Conditions:
+      required:
+      - code
+      properties:
+        code:
+          type: array
+          items:
+            type: string
+    ErrorModel:
+      type: object
+      required:
+      - message
+      - code
+      properties:
+        message:
+          type: string
+        code:
+          type: integer
+          minimum: 100
+          maximum: 600
