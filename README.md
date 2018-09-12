@@ -5,22 +5,22 @@
 * What are the methods that you are exposing to your clients ?
 * What is the input format for the model (json, xml, etc.) ?
 * What is the security model for the api, could use identity access management, api keys or many other items.
-* Follow some of the api leading practices - many resources, this is one example from microsoft : https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design
+* Follow some of the api leading practices - many resources, this is one example from microsoft : [microsoft leading practices][ms2]
 
 # [Swagger hub][sh1] tool could be used to author the api, could use other methods.
 
-* An example of the api that is hosted in this repository is located in my swagger hub at [commercialize api][soa1]
+* An example of the api that is hosted in this repository is located in my swagger hub at [commercialize api][soa1]; there are some changes that need to be made from swagger hub to you can copy into the cloud hosting provider of API management suite. see [api_cloud]
 
 
-# [AWS][aws1]specific information 
+# [AWS][aws1] specific information 
 * Copy the api that you completed in the swagger hub and paste into AWS gateway.
 
 
-# [Microsoft][ms1]specific information 
+# [Microsoft][ms1] specific information 
 * Copy the api that you completed in the swagger hub and paste into Azure gateway.
 
 
-# [Google][gg1]specific information 
+# [Google][gg1] specific information 
 * Copy the api that you completed in the swagger hub and paste into Apigee gateway.
 
 
@@ -34,6 +34,11 @@ MIT
 
    [sh1]: <https://swagger.io/tools/swaggerhub/>
    [ms1]: <https://azure.microsoft.com/en-us/services/api-management/>
+   [ms2]: <https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design>
    [gg1]: <https://cloud.google.com/apigee-api-management/>
    [aws1]: <https://docs.aws.amazon.com/apigateway/latest/developerguide/integrating-api-with-aws-services-lambda.html>
    [soa1]:<https://app.swaggerhub.com/apis/edeuser/CommercializationAPI_SOA/1.0.0>
+   
+   [api]: <https://github.com/eddeuser2017>
+   [api_cloud]: <https://github.com/eddeuser2017>
+   [node]: <https://github.com/eddeuser2017>
