@@ -1,5 +1,6 @@
-# Commercialize Api
+# What is purpose of this repo :
 Describes the creation of the an api in swagger hub and then deploy to AWS with a lambda function completing the simple science.
+There 
 
 # Develop the api first  
 What are the methods that you are exposing to your clients ?
@@ -10,6 +11,8 @@ https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design
 
 # Swagger hub tool could be used to author the api, could use other methods.
 https://app.swaggerhub.com/home
+An example of the api that is hosted in this repository is located in my swagger hub at : https://app.swaggerhub.com/apis/edeuser/CommercializationAPI_SOA/1.0.0
+
 
 # AWS specific information 
 Copy the api that you completed in the swagger hub and paste into AWS gateway.
