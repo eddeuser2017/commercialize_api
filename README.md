@@ -40,6 +40,6 @@ MIT
    [aws1]: <https://docs.aws.amazon.com/apigateway/latest/developerguide/integrating-api-with-aws-services-lambda.html>
    [soa1]:<https://app.swaggerhub.com/apis/edeuser/CommercializationAPI_SOA/1.0.0>
    
-   [api]: <https://github.com/eddeuser2017/commercialize_api/blob/master/api>
+   [simple scoring api]: <https://github.com/eddeuser2017/commercialize_api/blob/master/simplescoringapi>
    [api_cloud]: <https://github.com/eddeuser2017/commercialize_api/blob/master/api_cloud>
    [scorePerson]: <https://github.com/eddeuser2017/commercialize_api/blob/master/scorePerson>
