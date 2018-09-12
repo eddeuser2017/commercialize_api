@@ -16,9 +16,11 @@ Copy the api that you completed in the swagger hub and paste into AWS gateway.
 https://docs.aws.amazon.com/apigateway/latest/developerguide/integrating-api-with-aws-services-lambda.html
 
 # Microsoft
+Copy the api that you completed in the swagger hub and paste into Azure gateway.
 https://azure.microsoft.com/en-us/services/api-management/
 
 # Google
+Copy the api that you completed in the swagger hub and paste into Apigee gateway.
 https://cloud.google.com/apigee-api-management/
 
 
