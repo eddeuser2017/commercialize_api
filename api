@@ -37,10 +37,6 @@ paths:
             $ref: '#/definitions/Scored'
         400:
           description: bad input parameter
-        default:
-          description: Unexpected error
-          schema:
-            $ref: '#/definitions/ErrorModel'
   /ping:
     get:
       tags:
@@ -52,8 +48,7 @@ paths:
           description: OK
         500:
           description: service is not healthy 
-
-#Reusable schemas (data models)
+ #Reusable schemas (data models)
 definitions:
     Person:
       type: object
@@ -65,11 +60,9 @@ definitions:
         id:
           type: string
           format: uuid
-          example: d290f1ee-6c54-4b01-90e6-d701748f0851
         gender:
           type: string
           pattern: '^[mMfFuU]$'
-          example: m
         conditions:
           $ref: '#/definitions/Conditions'
     Scored:
@@ -82,7 +75,6 @@ definitions:
           $ref: '#/definitions/Person'
         score:
           type: string
-          example: 1 - 10 
     Conditions:
       required:
       - code
@@ -91,7 +83,6 @@ definitions:
           type: array
           items:
             type: string
-            example: [8745002, 89003005, 427038005]
     ErrorModel:
       type: object
       required:
@@ -104,8 +95,3 @@ definitions:
           type: integer
           minimum: 100
           maximum: 600
-# Added by API Auto Mocking Plugin
-host: virtserver.swaggerhub.com
-basePath: /edeuser/CommercializationAPI_SOA/1.0.0
-schemes:
- - https
