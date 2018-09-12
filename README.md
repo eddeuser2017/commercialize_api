@@ -41,4 +41,4 @@ MIT
    
    [api]: <https://github.com/eddeuser2017/commercialize_api/blob/master/api>
    [api_cloud]: <https://github.com/eddeuser2017/commercialize_api/blob/master/api_cloud>
-   [node]: <https://github.com/eddeuser2017/commercialize_api/blob/master/>
+   [scorePerson]: <https://github.com/eddeuser2017/commercialize_api/blob/master/scorePerson>
