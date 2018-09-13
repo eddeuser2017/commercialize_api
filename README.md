@@ -70,6 +70,16 @@ $ This allows us to select the swagger file or just copy the api_cloud file from
 ```
 [![aws2](https://github.com/eddeuser2017/commercialize_api/blob/master/aws-apicreation2.png)]
 
+```sh
+$ Click import which now brings up your methods
+$ Click on /Scores POST method and Select "Integration type = Mock"
+$ this integration type will allow us to test that it will work appropriately prior to introducing the lamda function.
+$ Click "Save"
+```
+* once you have completed the integration type and saved the settings. 
+[![aws3](https://github.com/eddeuser2017/commercialize_api/blob/master/aws-apicreation3.png)]
+
+
 # MICROSOFT specific information 
 * Follow the [Microsoft][ms1] directions by copying the following [api_cloud] source code that you completed in the swagger hub and paste into AWS gateway.
 
