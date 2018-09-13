@@ -8,7 +8,7 @@
 * What is the security model for the api, could use identity access management, api keys or many other items.
 * Follow some of the api leading practices - many resources, this is one example from microsoft : [microsoft leading practices][ms2]
 
-# Author the api, could use other methods.
+# Author the api through example.
 * copy the [Simple scoring api][api] from the Git repository into an [api_Editor], for the purpose of this excercise i will use [Swagger hub][sh1] 
 
 * now that you have copied into swagger hub you can see there are two actions (Post to scores and Get ping of service) . these are two simple services that allow you to excercise some simple science.  
