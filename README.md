@@ -53,8 +53,21 @@ There are some changes that need to be made from swagger hub so you can copy int
 * Created a working example of the API that works in AWS see [api_cloud]
 
 
+
+
 # AWS specific information 
 * Follow the [AWS][aws1] directions by copying the following [api_cloud] source code that you completed in the swagger hub and paste into AWS gateway.
+
+```sh
+$ go to the aws console. you will see the following image : 
+```
+
+
+```sh
+$ Click ok, as they have already loaded the pet example for you.
+$ Select "Import from Swagger"
+$ This allows us to select the swagger file or just copy the api_cloud file from the repository into this box.
+```
 
 
 # MICROSOFT specific information 
