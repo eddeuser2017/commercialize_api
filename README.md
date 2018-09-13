@@ -26,13 +26,14 @@ $ this brings up the example json the api provided.
 $ Then Click "Execute" see the below image.
 ```
 [![execute](https://github.com/eddeuser2017/commercialize_api/blob/master/personJsonExecute.png)]
+
 ```sh
-$ Click "Try it out".
-$ this brings up the expected inputs to the service endpoint.
-$ this method is looking for a json packet that has some information about the person to be scored.
+$ Once the service executes you will see what the service would execute as a curl command and the requested URL.  
+$ this is ultimately a preview of what your customers will see when calling your service.
+$ based on the input a Code will be emited, see list of http codes below
 $ if you click on model in the method you will see the below image.
 ```
-[![response](https://github.com/eddeuser2017/commercialize_api/blob/master/scorePerson_response.png)]
+[httpErrorCodes]http error codes
 
 
 * An example of the api that is hosted in this repository is located in my swagger hub at [commercialize api][soa1]; there are some changes that need to be made from swagger hub so you can copy into the cloud hosting provider of API management suite. created a working example of the API that works in AWS see [api_cloud]
@@ -68,4 +69,6 @@ MIT
    [simple scoring api]: <https://github.com/eddeuser2017/commercialize_api/blob/master/simplescoringapi>
    [api_cloud]: <https://github.com/eddeuser2017/commercialize_api/blob/master/api_cloud>
    [scorePerson]: <https://github.com/eddeuser2017/commercialize_api/blob/master/scorePerson>
-   [scoreImage]: <https://github.com/eddeuser2017/commercialize_api/blob/master/>
+   [httpErrorCodes]: <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
+  
+   
