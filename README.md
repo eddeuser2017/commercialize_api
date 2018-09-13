@@ -28,12 +28,16 @@ $ Then Click "Execute" see the below image.
 [![execute](https://github.com/eddeuser2017/commercialize_api/blob/master/personJsonExecute.png)]
 
 ```sh
-$ Once the service executes you will see what the service would execute as a curl command and the requested URL.  
+$ Once the service executes you will see what the service would execute as 
+$ a curl command and the requested URL.  
 $ this is ultimately a preview of what your customers will see when calling your service.
-$ based on the input a Code will be emited, see list of http codes below
 $ if you click on model in the method you will see the below image.
+$ based on the input a Code will be emited, see list of http codes below
+
 ```
-[httpErrorCodes]http error codes
+[![response](https://github.com/eddeuser2017/commercialize_api/blob/master/scorePerson_response.png)]
+
+[httpErrorCodes]
 
 
 * An example of the api that is hosted in this repository is located in my swagger hub at [commercialize api][soa1]; there are some changes that need to be made from swagger hub so you can copy into the cloud hosting provider of API management suite. created a working example of the API that works in AWS see [api_cloud]
