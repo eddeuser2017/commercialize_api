@@ -37,10 +37,14 @@ $ based on the input a Code will be emited, see list of http codes below
 ```
 [![response](https://github.com/eddeuser2017/commercialize_api/blob/master/scorePerson_response.png)]
 
-[httpErrorCodes]
+[HTTP ERROR CODES][http]
 
 
-* An example of the api that is hosted in this repository is located in my swagger hub at [commercialize api][soa1]; there are some changes that need to be made from swagger hub so you can copy into the cloud hosting provider of API management suite. created a working example of the API that works in AWS see [api_cloud]
+* An example of the api that is hosted in this repository is located in my swagger hub at [commercialize api][soa1]
+
+
+#How do i deploy my newly created API ?
+There are some changes that need to be made from swagger hub so you can copy into the cloud hosting provider of API management suite. created a working example of the API that works in AWS see [api_cloud]
 
 
 # [AWS][aws1] specific information 
@@ -73,6 +77,6 @@ MIT
    [simple scoring api]: <https://github.com/eddeuser2017/commercialize_api/blob/master/simplescoringapi>
    [api_cloud]: <https://github.com/eddeuser2017/commercialize_api/blob/master/api_cloud>
    [scorePerson]: <https://github.com/eddeuser2017/commercialize_api/blob/master/scorePerson>
-   [httpErrorCodes]: <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
+   [http]: <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
   
    
