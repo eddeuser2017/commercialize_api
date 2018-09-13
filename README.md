@@ -16,7 +16,8 @@
 $ Click "Try it out".
 $ this brings up the expected inputs to the service endpoint.
 $ this method is looking for a json packet that has some information about the person to be scored.
-$ copy json here
+$ if you click on model in the method you will see the following :
+$ [scoreImage]
 ```
 
 * An example of the api that is hosted in this repository is located in my swagger hub at [commercialize api][soa1]; there are some changes that need to be made from swagger hub so you can copy into the cloud hosting provider of API management suite. created a working example of the API that works in AWS see [api_cloud]
@@ -52,3 +53,4 @@ MIT
    [simple scoring api]: <https://github.com/eddeuser2017/commercialize_api/blob/master/simplescoringapi>
    [api_cloud]: <https://github.com/eddeuser2017/commercialize_api/blob/master/api_cloud>
    [scorePerson]: <https://github.com/eddeuser2017/commercialize_api/blob/master/scorePerson>
+   [scoreImage]: <https://github.com/eddeuser2017/commercialize_api/blob/master/>
