@@ -1,14 +1,16 @@
 # What is purpose of this repo :
 * Describes the creation of the an api in swagger hub and then deploy to AWS with a lambda function completing the simple science. Has links to Microsoft, Google and AWS respectfully.  
 
-# Develop the api first  
+# Develop the api first
+* This is a collaboration, between the business and the IT execution arm that will complete the work.  The API is a contract that will be established and become the layer of abstraction so that the client can move forward with there work while the implementation is being completed.
 * What are the methods that you are exposing to your clients ?
 * What is the input format for the model (json, xml, etc.) ?
 * What is the security model for the api, could use identity access management, api keys or many other items.
 * Follow some of the api leading practices - many resources, this is one example from microsoft : [microsoft leading practices][ms2]
 
-# [Swagger hub][sh1] tool could be used to author the api, could use other methods.
-* copy the [Simple scoring api][api] from the Git repository into the swagger hub or another online editor.
+# Author the api, could use other methods.
+* copy the [Simple scoring api][api] from the Git repository into an [api_Editor], for the purpose of this excercise i will use [Swagger hub][sh1] 
+
 * now that you have copied into swagger hub you can see there are two actions (Post to scores and Get ping of service) . these are two simple services that allow you to excercise some simple science.  
 * if you click on the Post /scores; you can try it out without any further work.  
 
@@ -44,7 +46,10 @@ $ based on the input a Code will be emited, see list of http codes below
 
 
 # How do i deploy my newly created API ?
-There are some changes that need to be made from swagger hub so you can copy into the cloud hosting provider of API management suite. created a working example of the API that works in AWS see [api_cloud]
+There are some changes that need to be made from swagger hub so you can copy into the cloud hosting provider of API management suite. 
+* first thing to understand is that the OpenAPI standards that different cloud providers are using needs to be factored in .
+* 
+* created a working example of the API that works in AWS see [api_cloud]
 
 
 # AWS specific information 
@@ -78,5 +83,5 @@ MIT
    [api_cloud]: <https://github.com/eddeuser2017/commercialize_api/blob/master/api_cloud>
    [scorePerson]: <https://github.com/eddeuser2017/commercialize_api/blob/master/scorePerson>
    [http]: <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
-  
+   [api_Editor]: <https://github.com/OAI/OpenAPI-Specification/blob/master/IMPLEMENTATIONS.md#implementations>
    
