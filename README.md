@@ -43,20 +43,20 @@ $ based on the input a Code will be emited, see list of http codes below
 * An example of the api that is hosted in this repository is located in my swagger hub at [commercialize api][soa1]
 
 
-#How do i deploy my newly created API ?
+# How do i deploy my newly created API ?
 There are some changes that need to be made from swagger hub so you can copy into the cloud hosting provider of API management suite. created a working example of the API that works in AWS see [api_cloud]
 
 
-# [AWS][aws1] specific information 
-* Copy the api that you completed in the swagger hub and paste into AWS gateway.
+# AWS specific information 
+* Follow the [AWS][aws1] directions by copying the following [api_cloud] source code that you completed in the swagger hub and paste into AWS gateway.
 
 
-# [Microsoft][ms1] specific information 
-* Copy the api that you completed in the swagger hub and paste into Azure gateway.
+# MICROSOFT specific information 
+* Follow the [Microsoft][ms1] directions by copying the following [api_cloud] source code that you completed in the swagger hub and paste into AWS gateway.
 
 
-# [Google][gg1] specific information 
-* Copy the api that you completed in the swagger hub and paste into Apigee gateway.
+# GOOGLE specific information 
+* Follow the [Google][gg1] directions by copying the following [api_cloud] source code that you completed in the swagger hub and paste into AWS gateway.
 
 
 
