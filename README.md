@@ -10,7 +10,7 @@
 # [Swagger hub][sh1] tool could be used to author the api, could use other methods.
 * copy the [Simple scoring api][api] from the Git repository into the swagger hub or another online editor.
 
-* An example of the api that is hosted in this repository is located in my swagger hub at [commercialize api][soa1]; there are some changes that need to be made from swagger hub to you can copy into the cloud hosting provider of API management suite. see [api_cloud]
+* An example of the api that is hosted in this repository is located in my swagger hub at [commercialize api][soa1]; there are some changes that need to be made from swagger hub so you can copy into the cloud hosting provider of API management suite. created a working example of the API that works in AWS see [api_cloud]
 
 
 # [AWS][aws1] specific information 
