@@ -61,14 +61,14 @@ There are some changes that need to be made from swagger hub so you can copy int
 ```sh
 $ go to the aws console. you will see the following image : 
 ```
-[![aws1](https://github.com/eddeuser2017/commercialize_api/blob/master/aws-apicreation1.png)
+[![aws1](https://github.com/eddeuser2017/commercialize_api/blob/master/aws-apicreation1.png)]
 
 ```sh
 $ Click ok, as they have already loaded the pet example for you.
 $ Select "Import from Swagger"
 $ This allows us to select the swagger file or just copy the api_cloud file from the repository into this box.
 ```
-[![aws2](https://github.com/eddeuser2017/commercialize_api/blob/master/aws-apicreation2.png))
+[![aws2](https://github.com/eddeuser2017/commercialize_api/blob/master/aws-apicreation2.png)]
 
 # MICROSOFT specific information 
 * Follow the [Microsoft][ms1] directions by copying the following [api_cloud] source code that you completed in the swagger hub and paste into AWS gateway.
