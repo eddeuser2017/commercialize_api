@@ -47,9 +47,10 @@ $ based on the input a Code will be emited, see list of http codes below
 
 # How do i deploy my newly created API ?
 There are some changes that need to be made from swagger hub so you can copy into the cloud hosting provider of API management suite. 
-* first thing to understand is that the OpenAPI standards that different cloud providers are using needs to be factored in .
-* 
-* created a working example of the API that works in AWS see [api_cloud]
+* first thing to understand is that the OpenAPI standards that different cloud providers are using needs to be accounted for.
+* For a guide on the differences between the structures of the versions see [api_visualguide][openapi]
+* in the two API's i largely took some of the formatting that is out of the box for swagger and removed; such as mocking, examples, schemas etc.
+* Created a working example of the API that works in AWS see [api_cloud]
 
 
 # AWS specific information 
@@ -84,4 +85,5 @@ MIT
    [scorePerson]: <https://github.com/eddeuser2017/commercialize_api/blob/master/scorePerson>
    [http]: <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
    [api_Editor]: <https://github.com/OAI/OpenAPI-Specification/blob/master/IMPLEMENTATIONS.md#implementations>
+   [openapi]: <https://blog.readme.io/an-example-filled-guide-to-swagger-3-2/>
    
