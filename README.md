@@ -76,8 +76,30 @@ $ Click on /Scores POST method and Select "Integration type = Mock"
 $ this integration type will allow us to test that it will work appropriately prior to introducing the lamda function.
 $ Click "Save"
 ```
-* once you have completed the integration type and saved the settings. 
+* once you have completed the integration type and saved the settings you will see the test harness amazon uses.
+
 [![aws3](https://github.com/eddeuser2017/commercialize_api/blob/master/aws-apicreation3.png)]
+
+```sh
+$ Click on "Test"
+$ Navigate to the "Request Body"
+$ Paste the following JSON packet into the field
+$ {
+$   "id": "d290f1ee-6c54-4b01-90e6-d701748f0851",
+$   "gender": "m",
+$   "conditions": {
+$     "code": [
+$       [
+$         8745002,
+$         89003005,
+$         427038005
+$       ]
+$     ]
+$   }
+$ }
+$ Click on "Test"
+```
+* As you can see the execution excercised the API with the expected inputs and sent the body of the request for processing,which will ultimately be done by our NodeJS, Python or other Lamda function.
 
 
 # MICROSOFT specific information 
