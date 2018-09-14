@@ -106,7 +106,8 @@ $ Click on "Test"
 * click on "Integration Request" which is currently set at Type = "Mock"
 * We now want to actually implement the function.
 * If you are new to AWS you will have to get some basic setup completed prior to doing this section, see [AWS Deployment][aws_deployment] section which really will help you get the roles, users, deployments and stage setup prior to using the lambda.
-* Coming Soon - Import Lamda
+* To help out, i have created a cloud formation template - TEMPLATE HERE; based on the good work here from this [Cloud Formation template starter][cloudformation] that will do all this work for you; adapted from the following git repo. 
+
 
 # MICROSOFT specific information 
 * Follow the [Microsoft][ms1] directions by copying the following [api_cloud] source code that you completed in the swagger hub and paste into AWS gateway.
@@ -130,6 +131,7 @@ MIT
    [gg1]: <https://cloud.google.com/apigee-api-management/>
    [aws1]: <https://docs.aws.amazon.com/apigateway/latest/developerguide/integrating-api-with-aws-services-lambda.html>
    [soa1]:<https://app.swaggerhub.com/apis/edeuser/CommercializationAPI_SOA/1.0.0>
+   [cloudformation]: <https://gist.github.com/magnetikonline/c314952045eee8e8375b82bc7ec68e88>
    
    [simple scoring api]: <https://github.com/eddeuser2017/commercialize_api/blob/master/simplescoringapi>
    [api_cloud]: <https://github.com/eddeuser2017/commercialize_api/blob/master/api_cloud>
