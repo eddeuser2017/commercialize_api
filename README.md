@@ -84,6 +84,7 @@ $ Click "Save"
 $ Click on "Test"
 $ Navigate to the "Request Body"
 $ Paste the following JSON packet into the field
+$ Dont forget to remove the dollar signs "$" or it wont work
 $ {
 $   "id": "d290f1ee-6c54-4b01-90e6-d701748f0851",
 $   "gender": "m",
@@ -100,6 +101,11 @@ $ }
 $ Click on "Test"
 ```
 * As you can see the execution excercised the API with the expected inputs and sent the body of the request for processing,which will ultimately be done by our NodeJS, Python or other Lamda function.
+
+* Now it is time to integrate the real science into the API
+* click on "Integration Request" which is currently set at TYpe = "Mock"
+* We now want to actually implement the function.
+* Lets start by going to the [AWS Lamda][aws_lambda1] section 
 
 
 # MICROSOFT specific information 
