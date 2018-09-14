@@ -103,10 +103,10 @@ $ Click on "Test"
 * As you can see the execution excercised the API with the expected inputs and sent the body of the request for processing,which will ultimately be done by our NodeJS, Python or other Lamda function.
 
 * Now it is time to integrate the real science into the API
-* click on "Integration Request" which is currently set at TYpe = "Mock"
+* click on "Integration Request" which is currently set at Type = "Mock"
 * We now want to actually implement the function.
-* Lets start by going to the [AWS Lamda][aws_lambda1] section 
-
+* If you are new to AWS you will have to get some basic setup completed prior to doing this section, see [AWS Deployment][aws_deployment] section which really will help you get the roles, users, deployments and stage setup prior to using the lambda.
+* Coming Soon - Import Lamda
 
 # MICROSOFT specific information 
 * Follow the [Microsoft][ms1] directions by copying the following [api_cloud] source code that you completed in the swagger hub and paste into AWS gateway.
@@ -137,4 +137,6 @@ MIT
    [http]: <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
    [api_Editor]: <https://github.com/OAI/OpenAPI-Specification/blob/master/IMPLEMENTATIONS.md#implementations>
    [openapi]: <https://blog.readme.io/an-example-filled-guide-to-swagger-3-2/>
+   
+   [aws_deployment]: <https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-deployments.html>
    
