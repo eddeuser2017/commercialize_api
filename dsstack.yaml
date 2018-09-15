@@ -46,20 +46,54 @@ Resources:
     Properties:
       Code:
         ZipFile: |
-          def handler(event,context):
-            return {
-              'body': 'Hello there {0}'.format(event['requestContext']['identity']['sourceIp']),
-              'headers': {
-                'Content-Type': 'text/plain'
-              },
-              'statusCode': 200
+                console.log('Loading the Scoring function');
+
+                exports.handler = function(event, context, callback) {
+                console.log('Received event:', JSON.stringify(event, null, 2));
+                if (event.id === undefined || event.gender === undefined || event.conditions === undefined) {
+                    callback("400 Invalid Input");
+                }
+
+                var person = {};
+                person.id = event.id;
+                person.gender = event.gender;
+                person.conditions = event.conditions;
+                person.score  = 0;
+
+                // Verify our inputs for gender before we compute score.
+                var genderPattern = /[mMfFuU]/;
+                if !genderPattern.Test(event.gender){
+                    callback("400 Invalid gender");
+                }
+
+               //score women better for mortality than men as a cohort, if it is unknown then score worse than the other cohorts.
+                console.log('scoring');
+                switch(event.gender)
+                {
+                    case "m":
+                    case "M":
+                        person.score = 5;
+                        break;
+                    case "f":
+                    case "F":
+                        person.score = 8;
+                        break;
+                    case "u":
+                    case "U":
+                       person.score = 1;
+                        break;
+                    default:
+                        callback("400 Invalid scoring attributes");
+                        break;
+                }
+                callback(null, res);
             }
-      Description: "My function"
+      Description: "Basic deterministic score person function"
       FunctionName: !Ref "lambdaFunctionName"
       Handler: "index.handler"
       MemorySize: 128
       Role: !GetAtt "lambdaIAMRole.Arn"
-      Runtime: "python2.7"
+      Runtime: "nodejs6.1"
       Timeout: 10
 
   lambdaApiGatewayInvoke:
