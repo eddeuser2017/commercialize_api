@@ -1,5 +1,5 @@
-AWSTemplateFormatVersion: "2018-09-14"
-Description: "Simple scoring API"
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "Simple Data Science API and setup"
 
 Parameters:
   apiGatewayStageName:
@@ -47,25 +47,21 @@ Resources:
       Code:
         ZipFile: |
                 console.log('Loading the Scoring function');
-
                 exports.handler = function(event, context, callback) {
                 console.log('Received event:', JSON.stringify(event, null, 2));
                 if (event.id === undefined || event.gender === undefined || event.conditions === undefined) {
                     callback("400 Invalid Input");
                 }
-
                 var person = {};
                 person.id = event.id;
                 person.gender = event.gender;
                 person.conditions = event.conditions;
                 person.score  = 0;
-
                 // Verify our inputs for gender before we compute score.
                 var genderPattern = /[mMfFuU]/;
                 if !genderPattern.Test(event.gender){
                     callback("400 Invalid gender");
                 }
-
                //score women better for mortality than men as a cohort, if it is unknown then score worse than the other cohorts.
                 console.log('scoring');
                 switch(event.gender)
@@ -108,7 +104,7 @@ Resources:
     Type: "AWS::IAM::Role"
     Properties:
       AssumeRolePolicyDocument:
-        Version: "2018-09-14"
+        Version: "2012-10-17"
         Statement:
           - Action:
               - "sts:AssumeRole"
@@ -118,7 +114,7 @@ Resources:
                 - "lambda.amazonaws.com"
       Policies:
         - PolicyDocument:
-            Version: "2018-09-14"
+            Version: "2012-10-17"
             Statement:
               - Action:
                   - "logs:CreateLogGroup"
