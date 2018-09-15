@@ -1,5 +1,5 @@
-AWSTemplateFormatVersion: "2010-09-09"
-Description: "My API Gateway and Lambda function"
+AWSTemplateFormatVersion: "2018-09-14"
+Description: "Simple scoring API"
 
 Parameters:
   apiGatewayStageName:
@@ -93,7 +93,7 @@ Resources:
       Handler: "index.handler"
       MemorySize: 128
       Role: !GetAtt "lambdaIAMRole.Arn"
-      Runtime: "nodejs6.1"
+      Runtime: "nodejs6.10"
       Timeout: 10
 
   lambdaApiGatewayInvoke:
