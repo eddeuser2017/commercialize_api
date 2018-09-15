@@ -46,8 +46,9 @@ Resources:
     Properties:
       Code:
         ZipFile: |
-                console.log('Loading the Scoring function');
-                exports.handler = function(event, context, callback) {
+            console.log('Loading the Scoring function');
+            exports.handler = function(event, context, callback) 
+            {
                 console.log('Received event:', JSON.stringify(event, null, 2));
                 if (event.id === undefined || event.gender === undefined || event.conditions === undefined) {
                     callback("400 Invalid Input");
@@ -62,7 +63,6 @@ Resources:
                 if !genderPattern.Test(event.gender){
                     callback("400 Invalid gender");
                 }
-               //score women better for mortality than men as a cohort, if it is unknown then score worse than the other cohorts.
                 console.log('scoring');
                 switch(event.gender)
                 {
