@@ -108,7 +108,7 @@ Resources:
     Type: "AWS::IAM::Role"
     Properties:
       AssumeRolePolicyDocument:
-        Version: "2012-10-17"
+        Version: "2018-09-14"
         Statement:
           - Action:
               - "sts:AssumeRole"
@@ -118,7 +118,7 @@ Resources:
                 - "lambda.amazonaws.com"
       Policies:
         - PolicyDocument:
-            Version: "2012-10-17"
+            Version: "2018-09-14"
             Statement:
               - Action:
                   - "logs:CreateLogGroup"
