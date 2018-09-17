@@ -20,14 +20,14 @@ $ this brings up the expected inputs to the service endpoints for Posting a scor
 $ this method is looking for a json packet that has some information about the person to be scored.
 $ if you click on model in the method you will see the below image.
 ```
-[![model](https://github.com/eddeuser2017/commercialize_api/blob/master/personToScore.png)]
+[![model](https://github.com/eddeuser2017/commercialize_api/blob/master/images/personToScore.png)]
 
 ```sh
 $ Click "Edit Value" within the body of the PersontoScore.
 $ this brings up the example json the api provided.
 $ Then Click "Execute" see the below image.
 ```
-[![execute](https://github.com/eddeuser2017/commercialize_api/blob/master/personJsonExecute.png)]
+[![execute](https://github.com/eddeuser2017/commercialize_api/blob/master/images/personJsonExecute.png)]
 
 ```sh
 $ Once the service executes you will see what the service would execute as 
@@ -37,7 +37,7 @@ $ if you click on model in the method you will see the below image.
 $ based on the input a Code will be emited, see list of http codes below
 
 ```
-[![response](https://github.com/eddeuser2017/commercialize_api/blob/master/scorePerson_response.png)]
+[![response](https://github.com/eddeuser2017/commercialize_api/blob/master/images/scorePerson_response.png)]
 
 [HTTP ERROR CODES][http]
 
@@ -61,14 +61,14 @@ There are some changes that need to be made from swagger hub so you can copy int
 ```sh
 $ go to the aws console. you will see the following image : 
 ```
-[![aws1](https://github.com/eddeuser2017/commercialize_api/blob/master/aws-apicreation1.png)]
+[![aws1](https://github.com/eddeuser2017/commercialize_api/blob/master/images/aws-apicreation1.png)]
 
 ```sh
 $ Click ok, as they have already loaded the pet example for you.
 $ Select "Import from Swagger"
 $ This allows us to select the swagger file or just copy the api_cloud file from the repository into this box.
 ```
-[![aws2](https://github.com/eddeuser2017/commercialize_api/blob/master/aws-apicreation2.png)]
+[![aws2](https://github.com/eddeuser2017/commercialize_api/blob/master/images/aws-apicreation2.png)]
 
 ```sh
 $ Click import which now brings up your methods
@@ -78,7 +78,7 @@ $ Click "Save"
 ```
 * once you have completed the integration type and saved the settings you will see the test harness amazon uses.
 
-[![aws3](https://github.com/eddeuser2017/commercialize_api/blob/master/aws-apicreation3.png)]
+[![aws3](https://github.com/eddeuser2017/commercialize_api/blob/master/images/aws-apicreation3.png)]
 
 ```sh
 $ Click on "Test"
