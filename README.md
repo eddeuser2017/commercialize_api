@@ -106,7 +106,10 @@ $ Click on "Test"
 * click on "Integration Request" which is currently set at Type = "Mock"
 * We now want to actually implement the function.
 * Here is an [AWS Deployment][aws_deployment] help document that you will have to complete in order to get some basic setup done prior to doing this section.  
-* In order to streamline for those of you that would like to just get this up and running i created a cloud formation template - [simple science cloud formation template][cloudformationmodified]; based on the good work found at [Cloud Formation template starter][cloudformation].  
+* In order to streamline for those of you that would like to just get this up and running i created a cloud formation template - [simple science cloud formation template][cloudformationmodified]; 
+
+![N](https://github.com/eddeuser2017/commercialize_api/blob/master/aws-cloudformation-template.png)
+**based on the good work found at [Cloud Formation template starter][cloudformation].  
 
 # MICROSOFT specific information 
 * Follow the [Microsoft][ms1] directions by copying the following [api_cloud] source code that you completed in the swagger hub and paste into AWS gateway.
