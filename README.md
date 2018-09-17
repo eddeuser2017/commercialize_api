@@ -1,6 +1,12 @@
 # What is purpose of this repo :
 * Describes the creation of the an api in swagger hub and then deploy to AWS with a lambda function completing the simple science. Has links to Microsoft, Google and AWS respectfully.  
 
+# files included :
+* dsstack.yaml - is the cloud formation template for the entire build, includes everything needed to run the science.
+* scorePerson - nodejs lambda function that completes the scoring of the person.
+* simplescoring_api - is the api we use swaggerhub to get familiarity with online api editor.
+* simplescoring_cloud_api - is the api cleaned up to be promoted to teh cloud.
+
 # Develop the api first
 * This is a collaboration, between the business and the IT execution arm that will complete the work.  The API is a contract that will be established and become the layer of abstraction so that the client can move forward with there work while the implementation is being completed.
 * What are the methods that you are exposing to your clients ?
