@@ -108,7 +108,7 @@ $ Click on "Test"
 * Here is an [AWS Deployment][aws_deployment] help document that you will have to complete in order to get some basic setup done prior to doing this section.  
 * In order to streamline for those of you that would like to just get this up and running i created a cloud formation template - [simple science cloud formation template][cloudformationmodified]; 
 
-![N](https://github.com/eddeuser2017/commercialize_api/blob/master/aws-cloudformation-template.png)
+![N](https://github.com/eddeuser2017/commercialize_api/blob/master/images/aws-cloudformation-template.png)
 **based on the good work found at [Cloud Formation template starter][cloudformation].  
 
 # MICROSOFT specific information 
