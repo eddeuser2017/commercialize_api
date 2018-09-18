@@ -118,11 +118,11 @@ $ Click on "Test"
 **based on the good work found at [Cloud Formation template starter][cloudformation].  
 
 # MICROSOFT specific information 
-* Follow the [Microsoft][ms1] directions by copying the following [api_cloud] source code that you completed in the swagger hub and paste into AWS gateway.
+* Follow the [Microsoft][ms1] directions by copying the following [api_cloud] source code that you completed in the swagger hub and paste into MS gateway.
 
 
 # GOOGLE specific information 
-* Follow the [Google][gg1] directions by copying the following [api_cloud] source code that you completed in the swagger hub and paste into AWS gateway.
+* Follow the [Google][gg1] directions by copying the following [api_cloud] source code that you completed in the swagger hub and paste into GOOGLE gateway.
 
 
 
